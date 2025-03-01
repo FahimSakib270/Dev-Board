@@ -39,7 +39,7 @@
           </div>
           <div class="navbar-end space-x-4">
             <img src="assets/checkbox.png" alt="" />
-            <p class="font-bold text-3xl">23</p>
+            <p id="nav-num" class="font-bold text-3xl">23</p>
             <a class="btn"><img src="assets/theme-btn.png" alt="" /></a>
           </div>
         </div>
@@ -56,7 +56,7 @@
           <img class="w-12 h-12" src="assets/checkbox.png" alt="" />
           <div>
             <p>Task Assigned</p>
-            <p>05</p>
+            <p id="task-no">06</p>
           </div>
         </div>
 
@@ -117,8 +117,8 @@
 
           <!-- ShopEase Task Card 2 -->
           <div class="bg-[#F4F7FF] p-4 rounded-lg">
-            <p class="bg-white p-1 w-24 rounded-lg">ShopEase</p>
-            <p class="font-bold text-xl">Fix Mobile Button Issue</p>
+            <p class="bg-white p-1 w-24 rounded-lg">CloudSync</p>
+            <p class="font-bold text-xl">Add Dark Mode</p>
             <p class="text-start bg-white p-3">
               Debug using Chrome DevTools, check for overlapping elements.
             </p>
@@ -127,7 +127,10 @@
                 <p>Deadline</p>
                 <p class="font-bold text-xl">21 March 2025</p>
               </div>
-              <button class="btn bg-blue-700 text-white border-none">
+              <button
+                id="btn-cloudSync"
+                class="btn bg-blue-700 text-white border-none"
+              >
                 Completed
               </button>
             </div>
@@ -135,8 +138,8 @@
 
           <!-- ShopEase Task Card 3 -->
           <div class="bg-[#F4F7FF] p-4 rounded-lg">
-            <p class="bg-white p-1 w-24 rounded-lg">ShopEase</p>
-            <p class="font-bold text-xl">Fix Mobile Button Issue</p>
+            <p class="bg-white p-1 w-24 rounded-lg">SwiftPay</p>
+            <p class="font-bold text-xl">Optimize Home page</p>
             <p class="text-start bg-white p-3">
               Debug using Chrome DevTools, check for overlapping elements.
             </p>
@@ -145,7 +148,10 @@
                 <p>Deadline</p>
                 <p class="font-bold text-xl">21 March 2025</p>
               </div>
-              <button class="btn bg-blue-700 text-white border-none">
+              <button
+                id="btn-swiftpay"
+                class="btn bg-blue-700 text-white border-none"
+              >
                 Completed
               </button>
             </div>
@@ -153,8 +159,8 @@
 
           <!-- ShopEase Task Card 4 -->
           <div class="bg-[#F4F7FF] p-4 rounded-lg">
-            <p class="bg-white p-1 w-24 rounded-lg">ShopEase</p>
-            <p class="font-bold text-xl">Fix Mobile Button Issue</p>
+            <p class="bg-white p-1 w-24 rounded-lg">Meta</p>
+            <p class="font-bold text-xl">Add new emoji 🤲</p>
             <p class="text-start bg-white p-3">
               Debug using Chrome DevTools, check for overlapping elements.
             </p>
@@ -163,7 +169,10 @@
                 <p>Deadline</p>
                 <p class="font-bold text-xl">21 March 2025</p>
               </div>
-              <button class="btn bg-blue-700 text-white border-none">
+              <button
+                id="btn-meta"
+                class="btn bg-blue-700 text-white border-none"
+              >
                 Completed
               </button>
             </div>
@@ -171,8 +180,8 @@
 
           <!-- ShopEase Task Card 5 -->
           <div class="bg-[#F4F7FF] p-4 rounded-lg">
-            <p class="bg-white p-1 w-24 rounded-lg">ShopEase</p>
-            <p class="font-bold text-xl">Fix Mobile Button Issue</p>
+            <p class="bg-white p-1 w-24 rounded-lg">Google LLC</p>
+            <p class="font-bold text-xl">Integrate OpenAI API</p>
             <p class="text-start bg-white p-3">
               Debug using Chrome DevTools, check for overlapping elements.
             </p>
@@ -181,7 +190,10 @@
                 <p>Deadline</p>
                 <p class="font-bold text-xl">21 March 2025</p>
               </div>
-              <button class="btn bg-blue-700 text-white border-none">
+              <button
+                id="btn-google"
+                class="btn bg-blue-700 text-white border-none"
+              >
                 Completed
               </button>
             </div>
@@ -189,8 +201,8 @@
 
           <!-- ShopEase Task Card 6 -->
           <div class="bg-[#F4F7FF] p-4 rounded-lg">
-            <p class="bg-white p-1 w-24 rounded-lg">ShopEase</p>
-            <p class="font-bold text-xl">Fix Mobile Button Issue</p>
+            <p class="bg-white p-1 w-24 rounded-lg">Glassdoar</p>
+            <p class="font-bold text-xl">Improve Job searching</p>
             <p class="text-start bg-white p-3">
               Debug using Chrome DevTools, check for overlapping elements.
             </p>
@@ -199,7 +211,10 @@
                 <p>Deadline</p>
                 <p class="font-bold text-xl">21 March 2025</p>
               </div>
-              <button class="btn bg-blue-700 text-white border-none">
+              <button
+                id="btn-glassdoar"
+                class="btn bg-blue-700 text-white border-none"
+              >
                 Completed
               </button>
             </div>
@@ -207,5 +222,7 @@
         </div>
       </div>
     </section>
+    <script src="script/main.js"></script>
+    <script src="utilities.js"></script>
   </body>
 </html>
