@@ -59,6 +59,7 @@ document.getElementById("btn-glassdoar").addEventListener("click", function () {
   checkTaskCompletion();
 });
 
+// to get complete alert()
 function checkTaskCompletion() {
   let newText = document.getElementById("task-no").innerText;
   let updatedNewText = parseInt(newText);
