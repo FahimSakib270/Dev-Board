@@ -13,7 +13,6 @@ function navIncrease(navNum) {
   let newNum = improvednavNum + 1;
   document.getElementById(navNum).innerText = newNum;
 }
-
 //current time
 function getCurrentTime() {
   const now = new Date();
@@ -32,6 +31,7 @@ function dynmicActivityValue(id, btnTitle) {
   const createElm = document.createElement("p");
   let addvalue = document.getElementById(id);
   const currentTime = getCurrentTime();
-  createElm.innerText = `user click on this ${ShopEase} at ${currentTime}`;
+  createElm.classList.add("his");
+  createElm.innerText = `You have completed this task ${ShopEase} at ${currentTime}`;
   addvalue.appendChild(createElm);
 }

@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dev-Board</title>
+    <link rel="stylesheet" href="styles/style.css" />
     <!-- Tailwind CSS and DaisyUI CDN -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css"
@@ -30,7 +31,7 @@
     <!-- Header  -->
     <header class="md:container mx-auto shadow-md p-5">
       <nav>
-        <div class="navbar bg-base-100">
+        <div class="navbar bg-base-100 rounded-md p-3">
           <div class="navbar-start">
             <img src="assets/logo.png" alt="" />
             <a class="btn btn-ghost text-3xl font-normal"
@@ -53,37 +54,40 @@
       <div class="grid grid-cols-4 gap-x-8 gap-y-10">
         <!-- First  -->
         <div
-          class="flex flex-row justify-center items-center gap-2 w-56 bg-[#F4F7FF]"
+          class="flex flex-row justify-center items-center gap-2 rounded-lg bg-[#F4F7FF]"
         >
           <img class="w-12 h-12" src="assets/checkbox.png" alt="" />
           <div>
             <p>Task Assigned</p>
-            <p id="task-no">06</p>
+            <p id="task-no" class="font-bold">06</p>
           </div>
         </div>
 
         <!-- Second  -->
-        <div id="new-file" class="bg-blue-300 w-fit p-4 cursor-pointer">
+        <div
+          id="new-file"
+          class="bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] w-full p-4 cursor-pointer rounded-lg"
+        >
           <div class="flex flex-row justify-center items-center gap-2">
             <img src="assets/board.png" alt="" />
-            <p>Discover Something New Today!</p>
+            <p class="text-white text-lg">Discover Something New Today!</p>
           </div>
         </div>
 
         <!-- Third  -->
         <div
-          class="flex flex-row justify-center items-center w-56 gap-2 bg-[#F4F7FF]"
+          class="flex flex-row rounded-lg justify-center items-center gap-2 bg-[#F4F7FF]"
         >
           <img class="w-12 h-12" src="assets/calender.png" alt="" />
-          <p id="show-time "></p>
+          <p id="show-time"></p>
         </div>
 
         <!-- Activity  -->
         <div
           id="activity-container"
-          class="row-span-3 col-span-1 bg-[#E5E7EB] p-4 rounded-lg space-y-4"
+          class="row-span-2 col-span-1 bg-[#E5E7EB] p-4 rounded-lg space-y-4"
         >
-          <div class="flex flex-row justify-start items-center gap-2">
+          <div class="flex flex-row justify-center items-center gap-2">
             <img src="assets/activity.png" alt="" class="w-8 h-8" />
             <p class="font-medium">Activity Log</p>
           </div>
