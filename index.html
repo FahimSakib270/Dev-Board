@@ -27,7 +27,7 @@
     </style>
   </head>
   <body class="poppins-regular">
-    <!-- Header Section -->
+    <!-- Header  -->
     <header class="md:container mx-auto">
       <nav>
         <div class="navbar bg-base-100">
@@ -46,10 +46,10 @@
       </nav>
     </header>
 
-    <!-- Main Content Section -->
+    <!-- Main -->
     <section class="md:container mx-auto mt-10">
       <div class="grid grid-cols-4 gap-x-8 gap-y-10">
-        <!-- First Column -->
+        <!-- First  -->
         <div
           class="flex flex-row justify-center items-center gap-2 w-56 bg-[#F4F7FF]"
         >
@@ -60,7 +60,7 @@
           </div>
         </div>
 
-        <!-- Second Column -->
+        <!-- Second  -->
         <div class="bg-blue-300 w-fit p-4">
           <div class="flex flex-row justify-center items-center gap-2">
             <img src="assets/board.png" alt="" />
@@ -68,28 +68,27 @@
           </div>
         </div>
 
-        <!-- Third Column -->
+        <!-- Third  -->
         <div
           class="flex flex-row justify-center items-center w-56 gap-2 bg-[#F4F7FF]"
         >
           <img class="w-12 h-12" src="assets/calender.png" alt="" />
-          <p>
-            Wed , <br />
-            Jul 28 2025
-          </p>
+          <p id="show-time" dateDynamic()></p>
         </div>
 
-        <!-- Activity Section (Right Side) -->
+        <!-- Activity  -->
         <div
+          id="activity-container"
           class="row-span-3 col-span-1 bg-[#E5E7EB] p-4 rounded-lg space-y-4"
         >
           <div class="flex flex-row justify-start items-center gap-2">
             <img src="assets/activity.png" alt="" class="w-8 h-8" />
             <p class="font-medium">Activity Log</p>
           </div>
-          <button class="btn bg-blue-700 text-white w-full">
+          <button id="activity-btn" class="btn bg-blue-700 text-white w-full">
             Clear History
           </button>
+          <span id="History"> </span>
         </div>
 
         <!-- Task Cards Grid -->
@@ -97,7 +96,9 @@
           <!-- ShopEase Task Card 1 -->
           <div class="bg-[#F4F7FF] p-4 rounded-lg">
             <p class="bg-white p-1 w-24 rounded-lg">ShopEase</p>
-            <p class="font-bold text-xl">Fix Mobile Button Issue</p>
+            <p id="fix-mobileBtn" class="font-bold text-xl">
+              Fix Mobile Button Issue
+            </p>
             <p class="text-start bg-white p-3">
               Debug using Chrome DevTools, check for overlapping elements.
             </p>
@@ -118,7 +119,7 @@
           <!-- ShopEase Task Card 2 -->
           <div class="bg-[#F4F7FF] p-4 rounded-lg">
             <p class="bg-white p-1 w-24 rounded-lg">CloudSync</p>
-            <p class="font-bold text-xl">Add Dark Mode</p>
+            <p id="CloudSync-id" class="font-bold text-xl">Add Dark Mode</p>
             <p class="text-start bg-white p-3">
               Debug using Chrome DevTools, check for overlapping elements.
             </p>
@@ -139,7 +140,7 @@
           <!-- ShopEase Task Card 3 -->
           <div class="bg-[#F4F7FF] p-4 rounded-lg">
             <p class="bg-white p-1 w-24 rounded-lg">SwiftPay</p>
-            <p class="font-bold text-xl">Optimize Home page</p>
+            <p id="Home-page" class="font-bold text-xl">Optimize Home page</p>
             <p class="text-start bg-white p-3">
               Debug using Chrome DevTools, check for overlapping elements.
             </p>
@@ -160,7 +161,7 @@
           <!-- ShopEase Task Card 4 -->
           <div class="bg-[#F4F7FF] p-4 rounded-lg">
             <p class="bg-white p-1 w-24 rounded-lg">Meta</p>
-            <p class="font-bold text-xl">Add new emoji 🤲</p>
+            <p id="emoji" class="font-bold text-xl">Add new emoji 🤲</p>
             <p class="text-start bg-white p-3">
               Debug using Chrome DevTools, check for overlapping elements.
             </p>
@@ -181,7 +182,7 @@
           <!-- ShopEase Task Card 5 -->
           <div class="bg-[#F4F7FF] p-4 rounded-lg">
             <p class="bg-white p-1 w-24 rounded-lg">Google LLC</p>
-            <p class="font-bold text-xl">Integrate OpenAI API</p>
+            <p id="OpenAI" class="font-bold text-xl">Integrate OpenAI API</p>
             <p class="text-start bg-white p-3">
               Debug using Chrome DevTools, check for overlapping elements.
             </p>
@@ -202,7 +203,9 @@
           <!-- ShopEase Task Card 6 -->
           <div class="bg-[#F4F7FF] p-4 rounded-lg">
             <p class="bg-white p-1 w-24 rounded-lg">Glassdoar</p>
-            <p class="font-bold text-xl">Improve Job searching</p>
+            <p id="job-search" class="font-bold text-xl">
+              Improve Job searching
+            </p>
             <p class="text-start bg-white p-3">
               Debug using Chrome DevTools, check for overlapping elements.
             </p>
