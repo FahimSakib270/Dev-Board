@@ -53,35 +53,36 @@
     <section class="md:container mx-auto mt-10">
       <div class="grid grid-cols-4 gap-x-8 gap-y-10">
         <!-- First  -->
-        <div
-          class="flex flex-row justify-center items-center gap-2 rounded-lg bg-[#F4F7FF]"
-        >
-          <img class="w-12 h-12" src="assets/checkbox.png" alt="" />
-          <div>
-            <p>Task Assigned</p>
-            <p id="task-no" class="font-bold">06</p>
+        <span class="flex flex-row justify-between col-span-3">
+          <div
+            class="flex flex-row w-56 justify-center items-center gap-2 rounded-lg bg-[#F4F7FF]"
+          >
+            <img class="w-12 h-12" src="assets/checkbox.png" alt="" />
+            <div>
+              <p>Task Assigned</p>
+              <p id="task-no" class="font-bold">06</p>
+            </div>
           </div>
-        </div>
 
-        <!-- Second  -->
-        <div
-          id="new-file"
-          class="bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] w-full p-4 cursor-pointer rounded-lg"
-        >
-          <div class="flex flex-row justify-center items-center gap-2">
-            <img src="assets/board.png" alt="" />
-            <p class="text-white text-lg">Discover Something New Today!</p>
+          <!-- Second  -->
+          <div
+            id="new-file"
+            class="bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] w-7/12 p-4 cursor-pointer rounded-lg"
+          >
+            <div class="flex flex-row justify-center items-center gap-2">
+              <img src="assets/board.png" alt="" />
+              <p class="text-white text-lg">Discover Something New Today!</p>
+            </div>
           </div>
-        </div>
 
-        <!-- Third  -->
-        <div
-          class="flex flex-row rounded-lg justify-center items-center gap-2 bg-[#F4F7FF]"
-        >
-          <img class="w-12 h-12" src="assets/calender.png" alt="" />
-          <p id="show-time"></p>
-        </div>
-
+          <!-- Third  -->
+          <div
+            class="flex flex-row w-56 rounded-lg justify-center items-center gap-2 bg-[#F4F7FF]"
+          >
+            <img class="w-12 h-12" src="assets/calender.png" alt="" />
+            <p id="show-time"></p>
+          </div>
+        </span>
         <!-- Activity  -->
         <div
           id="activity-container"
