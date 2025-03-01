@@ -13,33 +13,6 @@ function navIncrease(navNum) {
   let newNum = improvednavNum + 1;
   document.getElementById(navNum).innerText = newNum;
 }
-// Function to add dynamic date
-function dateDynamic() {
-  const now = new Date();
-  const days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
-  const months = [
-    "Jan",
-    "Feb",
-    "Mar",
-    "Apr",
-    "May",
-    "Jun",
-    "Jul",
-    "Aug",
-    "Sep",
-    "Oct",
-    "Nov",
-    "Dec",
-  ];
-
-  const day = days[now.getDay()];
-  const month = months[now.getMonth()];
-  const monthDate = now.getDate();
-  const year = now.getFullYear();
-  const pDate = document.getElementById("show-time");
-  pDate.innerText = `${day}, ${month} ${monthDate} ${year}`;
-}
-dateDynamic();
 
 //current time
 function getCurrentTime() {

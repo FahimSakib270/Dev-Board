@@ -28,7 +28,7 @@
   </head>
   <body class="poppins-regular">
     <!-- Header  -->
-    <header class="md:container mx-auto">
+    <header class="md:container mx-auto shadow-md p-5">
       <nav>
         <div class="navbar bg-base-100">
           <div class="navbar-start">
@@ -40,7 +40,9 @@
           <div class="navbar-end space-x-4">
             <img src="assets/checkbox.png" alt="" />
             <p id="nav-num" class="font-bold text-3xl">23</p>
-            <a class="btn"><img src="assets/theme-btn.png" alt="" /></a>
+            <a id="nav-img" class="btn"
+              ><img src="assets/theme-btn.png" alt=""
+            /></a>
           </div>
         </div>
       </nav>
@@ -61,7 +63,7 @@
         </div>
 
         <!-- Second  -->
-        <div class="bg-blue-300 w-fit p-4">
+        <div id="new-file" class="bg-blue-300 w-fit p-4 cursor-pointer">
           <div class="flex flex-row justify-center items-center gap-2">
             <img src="assets/board.png" alt="" />
             <p>Discover Something New Today!</p>
@@ -73,7 +75,7 @@
           class="flex flex-row justify-center items-center w-56 gap-2 bg-[#F4F7FF]"
         >
           <img class="w-12 h-12" src="assets/calender.png" alt="" />
-          <p id="show-time" dateDynamic()></p>
+          <p id="show-time "></p>
         </div>
 
         <!-- Activity  -->
@@ -226,6 +228,7 @@
       </div>
     </section>
     <script src="script/main.js"></script>
-    <script src="utilities.js"></script>
+    <script src="script/utilities.js"></script>
+    <script src="script/newFile.js"></script>
   </body>
 </html>

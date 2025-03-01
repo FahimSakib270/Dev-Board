@@ -46,7 +46,7 @@ document.getElementById("btn-google").addEventListener("click", function () {
 document.getElementById("btn-glassdoar").addEventListener("click", function () {
   let time = getCurrentTime();
   alert(`Board updated successfully at ${time}`);
-  alert(`congrats!!!you have completed the task `);
+  alert(`congrats!!!you have completed the task`);
   reduceTask("task-no");
   navIncrease("nav-num");
   dynmicActivityValue("History", "job-search");
@@ -56,4 +56,14 @@ document.getElementById("btn-glassdoar").addEventListener("click", function () {
 document.getElementById("activity-btn").addEventListener("click", function () {
   let data = document.getElementById("History");
   data.innerText = "";
+});
+
+//random color
+
+function getRandomColor() {
+  const randomColor = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+  document.body.style.backgroundColor = randomColor;
+}
+document.getElementById("nav-img").addEventListener("click", function () {
+  getRandomColor();
 });
